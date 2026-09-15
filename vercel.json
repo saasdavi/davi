@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "mounjaxivitta.com.br"
+        }
+      ],
+      "destination": "/mounjaxi-vitta/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.mounjaxivitta.com.br"
+        }
+      ],
+      "destination": "/mounjaxi-vitta/index.html"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mounjaxivitta.com.br"
+        }
+      ],
+      "destination": "/mounjaxi-vitta/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.mounjaxivitta.com.br"
+        }
+      ],
+      "destination": "/mounjaxi-vitta/:path*"
+    }
+  ]
+}
